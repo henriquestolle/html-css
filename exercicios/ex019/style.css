@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+# = id (HTML) se sobre poem class, (só pode um elemento)
+. = class (HTML), (pode vários elementos) 
+*/
+body{
+    background-color: #2474F5;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: #000000;
+}
+
+#principal{
+    text-align: center;
+    background-color:#1900ffaa;
+    color:#ffffff;
+}
+
+h2{
+    color:#000000;
+}
+
+.basico{
+    color:#8f0e07 ;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #097903;
+}
+
+.avancado{
+    color: rgb(255, 255, 255);
+}
+
+.destaque{
+    background-color: #db853f;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <style>
+        body{
+            background-color: rgba(57, 149, 189, 0.563);
+        }
+    </style>
+</head>
+<body>
+        <h1>Inserindo vídeos ospedados localmente</h1>
+        <p>
+        Este vídeo está hospedado no meu próprio servidor.</p>
+    
+
+        <video width="500" height="300" poster="imagens/Planet9_Wallpaper_5000x2813.jpg" controls loop>
+            <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+            <source src="midia/Meu-Video.webm.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+    
+        <h1>Inserindo vídeos do Youtube.</h1>
+
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/pN0RdrbzhlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Esse é o melhor/ video do Youtube incorporando -->
+
+        <h1>Inserindo vídeos do Vimeo.</h1>
+
+        <iframe src="https://player.vimeo.com/video/583584095?h=c5ac6ba2be&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <!-- Esse é o melhor/ video do Vimeo incorporando -->
+</body>
+</html>

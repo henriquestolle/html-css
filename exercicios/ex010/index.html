@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+        button{
+            height: 20px;
+            size: 50px;
+            position: center;
+            
+        }
+        button:hover{
+            background-color: rgba(59, 59, 223, 0.354);
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no Github de Gustavo Guanabara</a></p>
+    <p>Você também pode acessar o <a href="https:/youtube.com/@CursoemVideo" target="_blank" rel="external">canal gratuito de Gustavo Guanabara</a></p>
+    <h2>Usando links internos</h2>
+    <p>esta é a primeira página do site. Se você quiser, pode acessar também a <a href="pag002.html" rel="next" target="_self">segunda página</a> do meu site.</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p>
+
+    <h1>Links para dowload</h1>
+    <ul>
+     <li>
+    <button>
+     <a href="livro/ebook_css.01.pdf" target="_blank"rel="next" download="ebook_css.01.pdf" type="aplication/pdf">Baixar livro em PDF</a>
+            </button>
+ </li>
+<li>
+ <button><a href="livro/ebook_css.01 - Copia.zip" download="ebook_css.01" type="aplication/zip">Livro compactado em ZIP</a>
+  </button>
+        </li>
+    </ul>
+</body>
+</html>
