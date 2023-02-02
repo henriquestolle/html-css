@@ -1,0 +1,16 @@
+.bg-img {
+    background-image: url('elonmusk.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
