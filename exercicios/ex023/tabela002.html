@@ -15,7 +15,17 @@
             margin: auto;
             width: 370px;
             border-collapse: collapse;
+            position: relative;
+            background-attachment: fixed;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(185, 193, 200, 0.806);
+        }
+
         tr {
             border-collapse: collapse; 
         }
@@ -24,6 +34,7 @@
             text-align: center;
             border: 1px solid black;
             padding: 10px;
+            width: 370px;
         }
         td{
             border: 1px solid black;
@@ -31,9 +42,24 @@
             text-align: left;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(90, 88, 88);
+
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(90, 88, 88);
             color: white;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td.num {
@@ -54,9 +80,10 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
     <thead>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 100px;">População</th>
     </thead>
      <tbody>
         <tr>
@@ -170,10 +197,19 @@
     </tbody>
      <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>202 269 245</strong></td>
         </tr>
      </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima minus odio neque recusandae, vitae laborum? Id iusto veritatis dignissimos temporibus sequi! Ad et in quod tempore pariatur, alias nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet voluptatem quis animi nam, illo culpa commodi assumenda repellendus quisquam, quidem, ad corporis praesentium sequi cumque? Debitis in nostrum fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed assumenda nam officiis? Quo numquam placeat earum ipsam aliquam. Atque aut delectus aperiam iste. Eaque, cupiditate quibusdam. Aspernatur, suscipit odit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima minus odio neque recusandae, vitae laborum? Id iusto veritatis dignissimos temporibus sequi! Ad et in quod tempore pariatur, alias nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet voluptatem quis animi nam, illo culpa commodi assumenda repellendus quisquam, quidem, ad corporis praesentium sequi cumque? Debitis in nostrum fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed assumenda nam officiis? Quo numquam placeat earum ipsam aliquam. Atque aut delectus aperiam iste. Eaque, cupiditate quibusdam. Aspernatur, suscipit odit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima minus odio neque recusandae, vitae laborum? Id iusto veritatis dignissimos temporibus sequi! Ad et in quod tempore pariatur, alias nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet voluptatem quis animi nam, illo culpa commodi assumenda repellendus quisquam, quidem, ad corporis praesentium sequi cumque? Debitis in nostrum fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed assumenda nam officiis? Quo numquam placeat earum ipsam aliquam. Atque aut delectus aperiam iste. Eaque, cupiditate quibusdam. Aspernatur, suscipit odit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima minus odio neque recusandae, vitae laborum? Id iusto veritatis dignissimos temporibus sequi! Ad et in quod tempore pariatur, alias nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet voluptatem quis animi nam, illo culpa commodi assumenda repellendus quisquam, quidem, ad corporis praesentium sequi cumque? Debitis in nostrum fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed assumenda nam officiis? Quo numquam placeat earum ipsam aliquam. Atque aut delectus aperiam iste. Eaque, cupiditate quibusdam. Aspernatur, suscipit odit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima minus odio neque recusandae, vitae laborum? Id iusto veritatis dignissimos temporibus sequi! Ad et in quod tempore pariatur, alias nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet voluptatem quis animi nam, illo culpa commodi assumenda repellendus quisquam, quidem, ad corporis praesentium sequi cumque? Debitis in nostrum fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed assumenda nam officiis? Quo numquam placeat earum ipsam aliquam. Atque aut delectus aperiam iste. Eaque, cupiditate quibusdam. Aspernatur, suscipit odit.</p>
 </body>
 </html>
