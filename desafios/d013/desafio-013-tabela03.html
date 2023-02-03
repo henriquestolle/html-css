@@ -16,7 +16,7 @@
             margin: auto;
         }
 
-        td {
+        td, th {
             border: 2px solid black;
             padding: 10px;
         }
@@ -25,20 +25,24 @@
             font-weight: bold;
             text-align: center;
         }
+
+        td {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Desafio Tabela 03</h1>
 
     <table>
+        <thead>
+            <th class="titulo">Grupo</th>
+            <th class="titulo">Nomes</th>
+            <th class="titulo" colspan="3">Filmes</th>
+        </thead>
         <tbody>
         <tr>
-            <td class="titulo">Grupo</td>
-            <td class="titulo">Nomes</td>
-            <td class="titulo" colspan="3">Filmes</td>
-        </tr>
-        <tr>
-            <td class="titulo" rowspan="3">Mulheres</td>
+            <th class="titulo" rowspan="3">Mulheres</th>
             <td>Ana Dos Santos</td>
             <td>Alien</td> 
             <td>Rambo</td>
@@ -57,9 +61,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td class="titulo" rowspan="4">Homens</td>
-        </tr>
-        <tr>
+            <th class="titulo" rowspan="3">Homens</th>
             <td>Henrique Souza</td>
             <td>Rede Social</td>
             <td>The Last of Us</td>
