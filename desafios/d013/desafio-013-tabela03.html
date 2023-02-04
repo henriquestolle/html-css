@@ -29,20 +29,28 @@
         td {
             text-align: left;
         }
+
+        caption {
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Desafio Tabela 03</h1>
 
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
-            <th class="titulo">Grupo</th>
-            <th class="titulo">Nomes</th>
-            <th class="titulo" colspan="3">Filmes</th>
+            <th class="titulo" scope="col">Grupo</th>
+            <th class="titulo" scope="col">Nomes</th>
+            <th class="titulo" colspan="3" scope="colgroup">Filmes</th>
         </thead>
         <tbody>
         <tr>
-            <th class="titulo" rowspan="3">Mulheres</th>
+            <th class="titulo" rowspan="3" scope="rowgroup">Mulheres</th>
             <td>Ana Dos Santos</td>
             <td>Alien</td> 
             <td>Rambo</td>
@@ -61,7 +69,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <th class="titulo" rowspan="3">Homens</th>
+            <th class="titulo" rowspan="3" scope="rowgroup">Homens</th>
             <td>Henrique Souza</td>
             <td>Rede Social</td>
             <td>The Last of Us</td>
@@ -80,6 +88,10 @@
             <td>A Procura da Felicidade</td>
         </tr>
     </tbody>
-    </table>
+    <tfoot>
+        <tr>
+            <th class="titulo" colspan="4" scope="row">Total</th>    
+            <td style="text-align: center;">XXXX</td>
+        </table>
 </body>
 </html>
