@@ -8,15 +8,24 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
         <fieldset>
             <legend>Color</legend>
             <p>
                 <label for="icolor">Cor: </label>
-                <input type="color" name="color" id="icolor">
+                <input type="color" name="color" id="icolor" value="#00ff00">
             </p>
             <p>
-                
+                <label for="ilevel">Nivel de Satisfação: </label>
+                <input type="range" name="level" id="ilevel" value="1" min="1" max="100" >
+            </p>
+            <p>
+                <label for="ipicture">Foto de Perfil: </label>
+                <input type="file" name="file" id="ipicture">
+            </p>
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
             </p>
         </fieldset>
     </form>
