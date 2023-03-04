@@ -8,9 +8,11 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
+
         <fieldset>
             <legend>Formulário</legend>
+
             <p>
                 <label for="istade">Estado: </label>
                 <select name="stade" id="istade">
@@ -40,6 +42,12 @@
                 </datalist>
                 
             </p>
+
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="50" rows="5"></textarea>
+            </p>
+
             <p>
                 <input type="submit" value="ENVIAR">
                 <input type="reset" value="LIMPAR">
