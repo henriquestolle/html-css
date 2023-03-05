@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* Estilo para impressoras */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+article::after {
+    content: "Esse artigo foi impresso através do site https://github.com/henriquestolle/html-css";
+}
+
+article {
+    width: 100%;
+}
+
+h1, h2 {
+    padding: 15px;
+}
