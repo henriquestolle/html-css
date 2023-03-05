@@ -9,7 +9,7 @@ body {
 
    background-repeat: no-repeat;
 
-   background-size: cover;
+   background-size: contain;
    
    background-color: #233EFF;
 }
