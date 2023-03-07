@@ -50,11 +50,10 @@ menu > ul > li > a {
     background-color: rgb(94, 94, 94);
     color: white;
     text-align: center;
-    border-top: 2px solid white;
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: rgb(134, 134, 134);
 }
 
 main {
